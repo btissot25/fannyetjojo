@@ -55,7 +55,7 @@ function getOutput(cmd) {
         b = cmd.substr(7, 3);
         o = cmd.substr(10, 3);
         if (b === atob(cmds.b) && o === atob(cmds.o)) {
-          out = "1. BG6768 P " + d + " 2 " + b + o + " KH2 1135 1345 " + d + " E BG/HBXP7"; //TODO AN output
+          out = atob(k);
           s2 = true;
         } else {
           out = "No availability for the selected flight."
@@ -79,7 +79,7 @@ function getOutput(cmd) {
 }
 
 function keyListener(e) {
-  console.log(e.keyCode);
+  //console.log(e.keyCode);
   if (e.keyCode === 13) {
     validateInput();
   } else if (e.keyCode === 38) {
@@ -102,3 +102,5 @@ var welcome = ''+
 '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>'+
 '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>'+
 '&nbsp;You&nbsp;are&nbsp;connected&nbsp;as&nbsp;Guest.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>';
+
+var k = 'KiombmJzcDtBTUFERVVTJm5ic3A7QVZBSUxBQklMSVRZJm5ic3A7LSZuYnNwO0FOJm5ic3A7KiombmJzcDtOQ0UmbmJzcDtOSUNFPGJyPiZuYnNwOzEmbmJzcDsmbmJzcDsmbmJzcDtCRzY3NjgmbmJzcDsmbmJzcDtKOSZuYnNwO1c5Jm5ic3A7UzkmbmJzcDtBNyZuYnNwO1k3Jm5ic3A7QjcmbmJzcDtNOSZuYnNwOy9CU0wmbmJzcDsyJm5ic3A7TkNFJm5ic3A7MSZuYnNwOyZuYnNwOzA3MTUmbmJzcDsmbmJzcDsmbmJzcDsmbmJzcDswOTQ1Jm5ic3A7Jm5ic3A7RTAvMzE5PGJyPiZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwOyZuYnNwO1U5Jm5ic3A7SzkmbmJzcDtINCZuYnNwO0w0Jm5ic3A7UTQmbmJzcDtUNCZuYnNwO0U5Jm5ic3A7TjkmbmJzcDtSOSZuYnNwO1Y5Jm5ic3A7WDkmbmJzcDtHUjxicj4=';
