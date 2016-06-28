@@ -1,0 +1,22 @@
+body, input.cmd {
+  color: #00ff00 !important;
+  font-size: 1em !important;
+  background-color: black;
+  font-family: consolas;
+}
+
+.cmd {
+  border: 0px;
+  outline: none;
+  background-color: black;
+  width: 90%;
+  text-transform: uppercase;
+}
+
+#cmd_pre {
+  width: 10px;
+}
+
+a, a:hover, a:visited {
+  color: white !important;
+}

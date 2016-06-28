@@ -1,12 +1,16 @@
-<!doctype html>
-<html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Fanny et Johan</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-</head>
-<body>
-  <h1>Hello les nazes !!!</h1>
-</body>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Fanny et Johan</title>
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/zgeg.js"></script>
+    <link href="css/terminal.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="content"></div>
+    <input class="cmd" id="cmd_pre" type="text" value="> " disabled />
+    <input class="cmd" id="cmd" type="text" value="" onkeyup="keyListener(event)" />
+    <div id="bp"></div>
+  </body>
 </html>
